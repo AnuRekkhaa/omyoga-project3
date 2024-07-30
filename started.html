@@ -1,0 +1,259 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Online Yoga Classes | OM YOGA</title>
+        <link rel="shortcut icon" href="faviconp3.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="style3.css">
+    </head>
+    <style>
+        .bg{
+            background-image: url(meditate.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 950px;
+            margin-top: -30px;
+        }
+        .container {
+            height: 750px;
+            width: 800px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.534);
+            border-radius: 15px;
+            box-shadow: 8px 8px 20px rgb(128, 128, 128);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn {
+            height: 60px;
+            width: 300px;
+            margin: 30px auto;
+            box-shadow: 10px 10px 30px rgb(254, 215, 188);
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .login,.signup {
+            font-size: 22px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .slider {
+            height: 60px;
+            width: 150px;
+            border-radius: 50px;
+            background-image: linear-gradient(to right,rgb(255, 195, 110),rgb(255, 146, 91));
+            position: absolute;
+            top: 30px;
+            left: 250px;
+            transition: all 0.3s ease-in-out;
+        }
+        .moveslider {
+            left: 400px;
+        }
+        .form-section {
+            height: 500px;
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            left: 150px;
+        }
+        .form-section-move {
+            left: -500px;
+        }
+        .login-box,.signup-box {
+            height: 100%;
+        }
+        .login-box {
+            gap: 50px;
+        }
+        .signup-box {
+            gap: 50px;
+        }
+        .ele {
+            height: 60px;
+            width: 450px;
+            outline: none;
+            border: none;
+            color: rgb(77, 77, 77);
+            background-color: rgb(252, 252, 252);
+            border-radius: 25px;
+            margin:10px 30px;
+            padding-left: 30px;
+            font-size: 18px;
+        }
+        .clkbtn {
+            height: 60px;
+            width: 150px;
+            border-radius: 40px;
+            background-image: linear-gradient(to right,rgb(255, 195, 110),rgb(255, 146, 91));
+            font-size: 22px;
+            margin: 20px 170px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            <img src="homepglogo3.png" style="width: 180px;height: 52px;">
+            <a href="started.html">Get Started</a>
+            <a href="contact3.html">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Therapy 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="weight.html">Weight Loss Therapy</a>
+                    <a href="back.html">Back Pain Therapy</a>
+                    <a href="stress.html">Stress Therapy</a>
+                    <a href="knee.html">Knee Pain Therapy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Classes 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="morning.html">Morning Classes</a>
+                    <a href="trial.html">Trial Class</a>
+                    <a href="evening.html">Evening Classes</a>
+                    <a href="kids.html">Kids Class</a>
+                    <a href="pregnancy.html">Pregnancy Class</a>
+                    <a href="elders.html">Elder's Class</a>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">Courses 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="beginner.html">Beginner's Classes</a>
+                    <a href="meditation.html">Meditation</a>
+                </div>
+            </div> 
+            <a href="program3.html">Special Programmes</a>
+            <a href="about3.html">About</a>
+        </div>
+
+        <div class="bg">
+            <h1 style="text-align: center;padding-top: 20px;font-size: 50px;color:orange;font-style: italic;font-family: georgia;">OM YOGA</h1>
+            <h3 style="text-align: center;color:orange;font-style: italic;font-family: georgia;">Register / Login to enhance the experience of our visual studio!</h3>
+            <div class="container">
+                <div class="slider"></div>
+                <div class="btn">
+                    <button class="login">Login</button>
+                    <button class="signup">Signup</button>
+                </div>
+                <div class="form-section">
+                    <div class="login-box">
+                        <h2 style="padding-left: 200px;">USER LOGIN</h2>
+                        <label for="email" style="font-size: 20px;padding-left: 40px;">Enter your UserID</label>
+                        <input type="email" class="email ele" placeholder="youremail@email.com">
+
+                        <label for="password" style="font-size: 20px;padding-left: 40px;">Enter your Password</label>
+                        <input type="password" class="password ele" placeholder="password">
+
+                        <input type="checkbox" style="margin-left: 40px;margin-top: 10px;">Remember me
+                        <button class="clkbtn">Login</button>
+                        <a href="" style="padding-left: 100px;color: black;">Forgot Username? </a>  <a href="" style="color: black;padding-left: 20px;">Forgot Password?</a>
+                    </div>
+                    <div class="signup-box" style="margin-left: 150px;">
+                        <h2 style="padding-left: 100px;">NEW USER REGISTRATION</h2>
+                        <label for="name" style="font-size: 20px;padding-left: 40px;">Enter your name</label>
+                        <input type="text" class="name ele" placeholder="Enter your name">
+
+                        <label for="email" style="font-size: 20px;padding-left: 40px;">Enter your emailID</label>
+                        <input type="email" class="email ele" placeholder="youremail@email.com">
+
+                        <label for="password" style="font-size: 20px;padding-left: 40px;">Enter your Password</label>
+                        <input type="password" class="password ele" placeholder="password">
+
+                        <label for="password" style="font-size: 20px;padding-left: 40px;">Re-enter your Password</label>
+                        <input type="password" class="password ele" placeholder="Confirm password">
+                        <button class="clkbtn">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let signup = document.querySelector(".signup");
+            let login = document.querySelector(".login");
+            let slider = document.querySelector(".slider");
+            let formSection = document.querySelector(".form-section");
+            signup.addEventListener("click", () => {
+                slider.classList.add("moveslider");
+                formSection.classList.add("form-section-move");
+            });
+            login.addEventListener("click", () => {
+                slider.classList.remove("moveslider");
+                formSection.classList.remove("form-section-move");
+            });
+        </script>
+
+        <footer>
+            <div class="footer">
+                <div class="link">
+                    <div style="width: 320px;margin-left: 10px;">
+                        <img src="homepglogo3.png" style="margin-top: 100px;border-radius: 10px;margin-left: 5px;">
+                        <p>"Come! Let's explore the perfect opportunity to be curious about who you are."</p>
+                    </div>
+                    <div style="width: 320px;padding-left: 30px;">
+                        <h3 style="color: rgb(0, 114, 0);">QUICK LINKS</h3>
+                        <dl style="cursor: pointer;">
+                            <dt>Blog<dt> <hr style="width: 80%;margin-right: 70px;">
+                            <dt>Asanams<dt> <hr style="width: 80%;margin-right: 70px;">
+                            <dt>Primary Class</dt><hr style="width: 80%;margin-right: 70px;">
+                            <dt>Nutrition Diet</dt><hr style="width: 80%;margin-right: 70px;">
+                            <dt>Locate our center</dt>
+                        </dl>
+                        <h3 style="color: rgb(0, 114, 0);">POLICY</h3>
+                        <dl style="cursor: pointer;">
+                            <dt>Disclaimer<dt> <hr style="width: 80%;margin-right: 70px;">
+                            <dt>Legal</dt><hr style="width: 80%;margin-right: 70px;">
+                            <dt>Terms and conditions</dt>
+                        </dl>
+                    </div>
+                    <div style="width: 320px;padding-left: 30px;">
+                        <h1 style="padding-left: 25px;color: rgb(0, 114, 0);">NEWSLETTER</h1>
+                        <h3 style="color: rgb(0, 114, 0);padding-left: 70px;">SUBSCRIBE</h3>
+                        <p>Stay updated with the latest information by subscribing to our Newsletter.</p>
+                        <label for="email">Enter your email</label>
+                        <input type="email" placeholder="Your email" required style="width: 85%;height: 30px;margin-top: 10px;border-radius: 5px;padding-left: 5px;">
+                        <button type="submit" style="width: 30%;height: 25px;border-radius: 5px;background-color: rgb(102, 102, 102);color: white; margin: 20px 70px;cursor: pointer;">Subscribe</button>
+                    </div>
+                    <div style="width: 320px;padding-left: 10px;">
+                        <p style="padding-left: 10px;font-size: 20px;"><b>Location:</b> <br>
+                            OM YOGA Headquarters,<br>
+                            555 Corporate Park Drive Suite,<br>
+                            Business District Center,<br>
+                            Metropolis City,<br> 
+                            California, <br>
+                            United States <br>
+                        <b>Other centers:</b><br> Chennai:+91 8882483781 <br>
+                        <b>Contact:</b><br> US:+1 589 354 3782 <br> India:+91 8882483781
+                        <b>Email:</b>info@omyoga.com
+                        <b>Website:</b>omyoga.com</p>
+                    </div>
+                </div>
+                <hr style="width: 80%;height: 3px; margin-top: 30px;background-color: black;">
+                <h4 style="padding-left: 10px;"><i class="fa-regular fa-copyright"></i>Copyrights Reserved-2024 OMYOGA</h4>
+                <div style="width: 360px;height: 60px;float: right;margin-top: -60px;padding-left: 10px;">
+                    <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp" style="font-size: 25px;padding: 20px;"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="font-size: 25px;padding: 20px;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="font-size: 25px;padding: 20px;"></i></a>
+                    <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin" style="font-size: 25px;padding: 20px;"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-twitter" style="font-size: 25px;padding: 20px;"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

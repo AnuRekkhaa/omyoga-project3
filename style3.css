@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Segoe UI;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(136, 136, 136);
+}
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.dropdown {
+    float: right;
+    overflow: hidden;
+}  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(245, 110, 110);
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: rgb(160, 160, 160);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.bgimage{
+    background-image: url(homepagep3.png);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgtext {
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bolder;
+    border: 1px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+.shape{
+    float: left;
+    width: 290px;
+	height: 150px;
+    margin: 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+	background: linear-gradient(to right,rgb(216, 206, 194),rgb(235, 179, 151));
+}
+table {
+    border-collapse: collapse;
+    margin: 30px 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding:8px 10px;
+}
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.essential{
+    display: flex;
+    width: 98%;
+    height: 600px;
+    margin: 20px 10px;
+    gap: 20px;
+}
+.section{
+    display: flex;
+    width: 98%;
+    height: 580px;
+    gap: 20px;
+}
+.values{
+    display: flex;
+    background-image: url(hphealth.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 98%;
+    height: 650px;
+    margin: 30px 10px;
+    gap: 20px;
+}
+.therapy{
+    background-image: url(hp\ therapy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 600px;
+    margin-left: -160px;
+}
+.steptherapy{
+    float: right;
+    width: 600px;
+    height: 600px;
+    margin-right: -150px;
+}
+.column {
+    float: left;
+    width: 23%;
+    height: 450px;
+    margin: 10px 12px;
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.box{
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(88, 255, 88);
+    margin: 20px auto;
+    padding: 12px 23px;
+    cursor: pointer;
+}
+#slideshow {
+    overflow: hidden;
+    height: 410px;
+    width: 1028px;
+    border-radius: 20px;
+    margin: 30px auto 40px;
+}
+.slide {
+    display: flex;
+    float: left;
+    height: 410px;
+    width: 1028px;
+}
+.slide-wrapper {
+    width: calc(1028px * 4);
+    animation: slide 50s ease;
+    animation-iteration-count: 5;
+}
+.slide:nth-child(1),.slide:nth-child(2),.slide:nth-child(3),.slide:nth-child(4) {
+    background: beige;
+}
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-1028px * 1);
+    }
+    60% {
+        margin-left: calc(-1028px * 2);
+    }
+    80% {
+        margin-left: calc(-1028px * 3);
+    }
+}
+.footer{
+    width: 100%;
+    height: 510px;
+    background-color: gainsboro;
+    margin-top: 20px;
+}
+.link{
+    display: flex;
+    height: 410px;
+    padding: 10px 10px;
+    gap: 20px;
+}
